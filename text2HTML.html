@@ -1,21 +1,23 @@
-<html>
-	<header><title>Convert Text to HTML</title></header>
-	<script src="text2HTML.js"></script>
-	<script> 
-		function ShowDiv() {
-    		document.getElementById("myDiv").style.display = "";
-		}	
-	</script>
-	
-	<body>
-	<div id="myDiv" style="display:none;"><H4>Converted HTML</H4></div>
+<html> 
+    <head>
+        <title>Convert Text to HTML</title>
+    </head>
+    <script src="text2HTML.js"></script>
+    <script>
+        function ShowDiv() {
+            document.getElementById("myDiv").style.display = "";
+        }
+    </script>
+    
+    <body>
+        <div id="myDiv" style="display:none;">
+            <H4>Converted HTML</H4></div>
 	<div id="textdata"></div>
-	<br>
 	
 	<form>
 		<H4>Enter Plain Text</H4>
 		<textarea cols="80" rows="15" type="text" id="formValueId" name="valueId"></textarea><br>
 		<input type="button" value="Convert Me" onclick="document.getElementById('textdata').innerHTML = text2HTML(this.form.valueId.value); ShowDiv();"/>
 	</form>
-</body>
+    </body>
 </html>
