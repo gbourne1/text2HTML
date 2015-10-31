@@ -1,3 +1,9 @@
+/* 
+ * File: text2HTML.js
+ * Description: Convert plain text to HTML
+ * Author: Geoffrey Bourne @geoffbourne https://github.com/gbourne1
+*/
+
 function text2HTML(text) {
     // 1: Plain Text Search
     text = text.replace(/&/g, "&amp;").
