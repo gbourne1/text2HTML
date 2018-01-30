@@ -6,7 +6,7 @@
 
 function text2HTML(text) {
     // 1: Plain Text Search
-    text = text.replace(/&/g, "&amp;").
+    var text = text.replace(/&/g, "&amp;").
     replace(/</g, "&lt;").
     replace(/>/g, "&gt;");
 
